@@ -1,0 +1,229 @@
+/* ====== Base ====== */
+body {
+    font-family: 'MedievalSharp', 'UnifrakturCook', 'Cinzel Decorative', cursive, serif;
+    background-color: #EAD8B2;
+    color: #2F2F2F;
+    min-height: 100vh;
+    
+
+/* ====== Cabeçalho ====== */
+.cabecalho {
+    color: #F5F1DC;
+    border-bottom: 2px solid #4B1E1E;
+    box-shadow: 0 8px 24px #0008;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    margin-top: 0;
+    margin-bottom: 0px;
+    letter-spacing: 3px;
+    }
+
+
+}
+
+
+/* ====== Container ====== */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: 0 4px 20px #0006;
+    padding: 30px;
+    background-color: #5C4033;
+    color: #F5F1DC;
+}
+
+/* ====== Produtos ====== */
+.container .produtos {
+    color: #F5F1DC;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    line-height: 36px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px #000a;
+    
+}
+
+/* ====== Filtros ====== */
+.container .filtros {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    gap: 24px;
+}
+
+.container .categoria-cartas,
+.container .preco-cartas {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container label {
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #BFA76F; /* dourado */
+
+}
+
+.container .categoria-cartas select,
+.container .preco-cartas input {
+    padding: 16px 13px;
+    border-radius: 8px;
+    border: 2px solid #BFA76F;
+    background-color: #556B2F;
+    color: #F5F1DC;
+    height: 52px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 18px;
+    box-shadow: 0 2px 8px #0004;
+}
+
+.container select:focus,
+.container input:focus,
+.container select:focus-visible,
+.container .container-cartas input:focus-visible {
+    outline: none;
+    border-color: #C2B280;
+    box-shadow: 0 0 8px #C2B280;
+}
+
+.container select.categoria {
+    appearance: none;
+    background-image: url('../imagens/seta-para-baixo.png');
+    background-repeat: no-repeat;
+     background-position: right 1rem center;
+}
+
+/* ====== Botão Filtrar ====== */
+.container .filtros .btn-filtrar {
+    border: none;
+    background-color: #4a6228;
+    color: #F5F1DC;
+    padding: 16px 32px;
+    font-weight: 700;
+    align-self: end;
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    font-family: 'Cinzel Decorative', serif;
+    box-shadow: 0 2px 8px #0006;
+    transition: 0.3s;
+}
+
+.container .filtros .btn-filtrar:hover {
+     background-color: #2a4132;   /* mantém o verde escuro */
+  color: #f5f1dc;              /* bege claro (branco amarelado) – excelente contraste */
+  border-color: #d4b24c;       /* opcional – reforça o destaque */
+  box-shadow: 0 0 6px #bfa14a66;
+}
+
+/* ====== Cartas ====== */
+.container .cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+    justify-content: center;
+}
+
+.container .cartas .carta {
+    max-width: 365px;
+    background-color: #3B2F2F;
+    color: #F5F1DC;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px #000a;
+    border: 3px solid #bfa14a;
+    overflow: hidden;
+    font-family: 'MedievalSharp', cursive;
+    position: relative;
+}
+
+.container .carta img {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #bfa14a;
+    background: #3B2F2F;
+}
+
+.container .carta .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #232c23;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 0px;
+}
+
+.container .carta .informacoes .nome-personagem {
+    font-size: 24px;
+    font-weight: 700;
+    color: #bfa14a;
+    font-family: 'Cinzel Decorative', serif;
+    text-shadow: 1px 1px 6px #000a;
+}
+
+.container .carta .informacoes .categoria {
+    color: #a3a3a3;
+    font-weight: 700;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.container .carta .informacoes .preco {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #3a9d5d;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.container .carta .informacoes .btn-comprar {
+    color: #e0e6d0;
+    background: linear-gradient(90deg, #2d1e3a 0%, #bfa14a 100%);
+    padding: 16px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 700;
+    border: 2px solid #bfa14a;
+    box-shadow: 0 2px 8px #0006;
+    cursor: pointer;
+}
+
+.container .carta .informacoes .btn-comprar:hover {
+    background: linear-gradient(90deg, #bfa14a 0%, #2d1e3a 100%);
+    color: #2e4d3a;
+}
+
+/* ====== Rodapé ====== */
+.rodape {
+    background: linear-gradient(90deg, #2d1e3a 0%, #181f1b 100%);
+    display: flex;
+    justify-content: center;
+    color: #bfa14a;
+    padding: 20px;
+    margin-top: 0;
+    border-top: 4px solid #bfa14a;
+    font-family: 'Cinzel Decorative', serif;
+    letter-spacing: 2px;
+}
+
+/* ====== Utilitários ====== */
+.esconder {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
