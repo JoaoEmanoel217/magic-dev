@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto1.0</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="src/imagens/MythBound_logo_200x100.png" alt="Logo MythBound" >
+    </header>
+
+    <main class="container">
+        <h1 class="produtos">Produtos</h1>
+        <div class="filtros">
+            <div class="categoria-cartas">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" class="categoria">
+                    <option value="">Selecione uma carta</option>
+                    <option value="comum">Comum</option>
+                    <option value="rara">Rara</option>
+                    <option value="epica">Épica</option>
+                    <option value="mitica">Mítica</option>
+                </select>
+            </div>
+            <div class="preco-cartas">
+                <label for="preco">Preço máximo (R$)</label>
+                <input type="text" id="preco" class="preco" placeholder="Ex:100">
+            </div>
+            <button class="btn-filtrar">Aplicar filtros</button>
+        </div>
+
+        <ul class="cartas">
+            <!-- carta arkanon -->
+            <li class="carta" data-categoria="mitica" data-preco="9500">
+                <img src="src/imagens/heitros.png" alt="carta-heitros">
+                <div class="informacoes">
+                    <h2 class="nome-carta">Heitros</h2>
+                    <span class="categoria">Categoria: Mítica</span>
+                    <span class="preco">R$ 9.500,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Arkanon" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <!-- carta lymara -->
+            <li class="carta" data-categoria="epica" data-preco="7900">
+                <img src="src/imagens/henrique.png" alt="Carta henrique">
+                <div class="informacoes">
+                    <h2 class="nome-carta">Henrakar</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 7.900,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Lymara" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <!-- carta kaelthar -->
+            <li class="carta" data-categoria="rara" data-preco="6200">
+                <img src="src/imagens/markon.png" alt="Carta Markon">
+                <div class="informacoes">
+                    <h2 class="nome-carta">Markon</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 6.200,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Kaelthar" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <!-- carta maldrik -->
+            <li class="carta" data-categoria="rara" data-preco="6800">
+                <img src="src/imagens/victor.png" alt="Carta Maldrik">
+                <div class="informacoes">
+                    <h2 class="nome-carta">Viktarr</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 6.800,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Maldrik" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <!-- carta drahven -->
+            <li class="carta" data-categoria="rara" data-preco="6000">
+                <img src="src/imagens/tarsion.png" alt="Carta Tarsion">
+                <div class="informacoes">
+                    <h2 class="nome-carta">Tarsion</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 6.000,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Drahven" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <!-- carta nyxsombra -->
+            <li class="carta" data-categoria="epica" data-preco="7000">
+                <img src="src/imagens/luydes.png" alt="Carta luydras">
+                <div class="informacoes">
+                    <h2 class="nome-carta">Luydras</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 7.000,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Nyxsombra" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="mitica" data-preco="10000">
+                <img src="src/imagens/kaua.png" alt="Carta Kaunir">
+                <div class="informacoes">
+                    <h2 class="nome-carta">Kaunir</h2>
+                    <span class="categoria">Categoria: Mítica</span>
+                    <span class="preco">R$ 10.000,00</span>
+                    <a href="http://wa.me/5511999999999?text=Olá, quero comprar a carta Nyxsombra" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="rodape">
+        @2025 - MythBound - Todos os direitos reservados
+    </footer>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
